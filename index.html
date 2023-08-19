@@ -4,12 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan- Hotel Booking</title>
+    <!-- <script src="
+https://cdn.jsdelivr.net/npm/swiper@10.2.0/swiper-bundle.min.js
+"></script>
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/swiper@10.2.0/swiper-bundle.min.css
+"
+      rel="stylesheet"
+    /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -125,8 +135,33 @@
           <!-- /.hotel-info__right -->
         </div>
         <!-- /.hotel-info -->
+        <div class="hotel-grid">
+          <div class="slider">
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <!-- ... -->
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <!-- /.swiper -->
+          </div>
+          <!-- /.slider -->
+        </div>
+        <!-- /.hotel-grid -->
       </div>
       <!-- /.container -->
     </section>
+    <script src="js/script.js"></script>
   </body>
 </html>
