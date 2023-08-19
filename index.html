@@ -19,7 +19,7 @@ https://cdn.jsdelivr.net/npm/swiper@10.2.0/swiper-bundle.min.css
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -142,19 +142,25 @@ https://cdn.jsdelivr.net/npm/swiper@10.2.0/swiper-bundle.min.css
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">
+                  <img src="img/slide.jpg" alt="Slide" />
+                </div>
+                <div class="swiper-slide swiper-slide__2">
+                  <img src="img/slide2.jpeg" alt="Slide" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/slide3.jpeg" alt="Slide" />
+                </div>
                 <!-- ... -->
               </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
+              <!-- If we need pagination
+              <div class="swiper-pagination"></div> -->
 
               <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+              <button class="slider-button slider-button__prev"></button>
+              <button class="slider-button slider-button__next"></button>
             </div>
-            <!-- /.swiper -->
+            <!-- /.swiper-container -->
           </div>
           <!-- /.slider -->
         </div>
@@ -162,6 +168,7 @@ https://cdn.jsdelivr.net/npm/swiper@10.2.0/swiper-bundle.min.css
       </div>
       <!-- /.container -->
     </section>
+    <script src="js/swiper-bundle.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

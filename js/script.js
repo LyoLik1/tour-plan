@@ -1,7 +1,24 @@
-import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
-
-Swiper.use([Navigation, Pagination]);
 const swiper = new Swiper('.swiper', {
-  // configure Swiper to use modules
+  // Optional parameters
+  loop: true,
+
+  // If we need pagination
+  // pagination: {
+  //   el: '.swiper-pagination',
+  // },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.slider-button__next',
+    prevEl: '.slider-button__prev',
+  },
+
+  // effect: 'cards',
+  keyboard: {
+    enabled: true,
+  },
+});
+
+addEventListener('keydown', function (e) {
+  console.log(e);
 });
