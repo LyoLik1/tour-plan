@@ -45,3 +45,28 @@ navigator.geolocation.getCurrentPosition(
     console.log('Impossible to get your location');
   }
 );
+$(document).ready(function () {
+  // Задаем скорость параллакса
+  var parallaxSpeed = 0.3; // Экспериментируйте с этим значением
+
+  // Получаем высоту окна браузера
+  var windowHeight = $(window).height();
+
+  // Получаем высоту изображения
+  var imageHeight = $('.parallax-bg').height();
+
+  // Получаем начальное значение прокрутки (снизу страницы)
+  var initialScroll = imageHeight - windowHeight;
+
+  // При прокрутке страницы
+  $(window).scroll(function () {
+    // Получаем значение прокрутки
+    var scrollTop = initialScroll - $(this).scrollTop();
+
+    // Рассчитываем позицию фона
+    var bgPosition = 'center ' + scrollTop * parallaxSpeed + 'px';
+
+    // Применяем позицию фона к элементу .parallax-bg
+    $('.parallax-bg').css('background-position', bgPosition);
+  });
+});

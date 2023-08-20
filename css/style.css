@@ -741,9 +741,7 @@ template {
 .newsletter {
   position: relative;
   padding: 98px 0px 87px 0px;
-  background-image: url(../img/newsletter-bg.jpeg);
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
 }
 .newsletter::before {
@@ -791,7 +789,7 @@ template {
 
 .subscribe {
   position: relative;
-  width: 355px;
+  width: 350px;
   height: 55px;
   border-radius: 4px;
   overflow: hidden;
@@ -817,6 +815,18 @@ template {
   border: none;
   background-color: #EC1F46;
   color: #fff;
+}
+
+.parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/newsletter-bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
 }
 
 @media (max-width: 1200px) {
