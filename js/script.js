@@ -17,6 +17,8 @@ const swiper = new Swiper('.swiper', {
   keyboard: {
     enabled: true,
   },
+  effect: 'fade',
+  // croosFade
 });
 
 addEventListener('keydown', function (e) {
