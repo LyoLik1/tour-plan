@@ -1,0 +1,55 @@
+.packages
+  padding: 40px 0 70px
+  &-wrapper
+    display: grid
+    grid-template: repeat(2,500px)/ repeat(3,350px)
+    grid-template-areas: 'proposition-1 proposition-1 proposition-2' 'proposition-3 proposition-4 proposition-5'
+    gap: 30px
+  &__title
+    text-align: center
+    font-size: 36px
+    font-style: normal
+    font-weight: 700
+    line-height: normal
+    text-transform: uppercase
+    margin-bottom: 65px
+
+.proposition
+  &__1
+    grid-area: proposition-1
+    display: grid
+    grid-template: 500px/ 366px 364px
+    grid-template-areas: 'image description'
+  &__image
+    grid-area: image
+  &__description
+    background-color: $dark
+    min-height: 250px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    margin-top: -5px
+    color: $light
+    padding: 25px 21px 25px 32px
+    border-radius: 0px 0px 8px 8px
+    &__main
+      grid-area: description
+      margin-top: 0px
+      padding: 47px 21px 30px 44px
+      border-radius: 0px 8px 8px 0px
+  &__title
+    margin-top: 0
+  &__img
+    margin-bottom: 0
+    border-radius: 8px 8px 0px 0px
+    &__main
+      border-radius: 8px 0px 0px 8px
+  &__2
+      grid-area: proposition-2
+  &__3
+      grid-area: proposition-3
+  &__4
+      grid-area: proposition-4
+  &__5
+      grid-area: proposition-5
+  
