@@ -13,6 +13,19 @@
   .card
     width: 230px
     height: 230px
+  .packages
+    &-wrapper
+      display: grid
+      grid-template: repeat(2,450px)/ repeat(3,300px)
+      grid-template-areas: 'proposition-1 proposition-1 proposition-2' 'proposition-3 proposition-4 proposition-5'
+      gap: 30px
+  .proposition
+    &__1
+    grid-template: 450px/ 314px 314px
+    grid-template-areas: 'image description'
+    &__description
+      &__main
+        padding-top: 10px
 
 @media ( max-width: 992px)
   .container , .newsletter-wrapper
@@ -74,7 +87,23 @@
   .card
     width: 340px
     height: 230px
-
+  .packages
+    &__title
+      margin-bottom: 40px
+    &-wrapper
+      display: grid
+      grid-template: repeat(3,470px)/ repeat(2,50%)
+      grid-template-areas: 'proposition-1 proposition-1' 'proposition-2 proposition-3' 'proposition-4 proposition-5'
+      gap: 20px
+  .proposition
+    &__1
+      grid-template: 470px/ repeat(2,50%)
+      grid-template-areas: 'image description'
+      margin-bottom: 30px
+    &__img
+      width: 100%
+    &__main
+      border-radius: 8px 0px 0px 8px
 
 @media ( max-width: 768px)
   .container, .newsletter-wrapper
@@ -157,6 +186,55 @@
   .card
     width: 49%
     height: 255px
+  .packages
+      &__title
+        margin-bottom: 40px
+      &-wrapper
+        display: grid
+        grid-template: repeat(3,410px)/ repeat(2,50%)
+        grid-template-areas: 'proposition-1 proposition-1' 'proposition-2 proposition-3' 'proposition-4 proposition-5'
+        gap: 10px
+  .proposition
+    &__1
+      grid-template: 410px/ repeat(2,50%)
+      grid-template-areas: 'image description'
+      margin-bottom: 30px
+    &__description
+      padding-left: 20px
+      &__main
+        padding-left: 20px
+    &__title
+      margin-bottom: 10px
+    &__subtitle
+      font-size: 12px
+      font-style: normal
+      font-weight: 400
+      line-height: 22.484px
+      margin-top: 0
+    &__info
+      max-width: 203px
+      height: 67px
+      margin-bottom: 10px
+    &__information
+      font-size: 10px
+    &__old-price
+      font-size: 12px
+      margin-bottom: 3px
+      &__main
+        margin-top: 7px      
+    &__button
+      position: absolute
+      top: -10px
+      // border-radius: 4px
+      max-width: 100px
+      min-height: 30px
+      font-size: 12px
+      padding: 7px
+      &__main
+        top: -12px
+    &__new-price
+      font-size: 18px
+
 
 @media (max-width: 576px) 
   .logo
@@ -176,3 +254,40 @@
     width: 100%
   .card
     width: 100%
+  .packages
+    padding-bottom: 30px
+    &-wrapper
+      display: grid
+      grid-template: repeat(5,375px)/ repeat(1,100%)
+      grid-template-areas: 'proposition-1' 'proposition-2' 'proposition-3' 'proposition-4' 'proposition-5' 'proposition-6'
+      gap: 10px
+  .proposition
+    &__1
+      grid-template: 400px/ repeat(2,50%)
+      grid-template-areas: 'image description'
+    &__img
+      width: 100%
+    &__main
+      border-radius: 8px 0px 0px 8px
+      // height: 100%
+    &:nth-child(2)
+      margin-top:30px
+      height: 100%
+      &:nth-child(3)
+      margin-top:20px
+      height: 100%
+    &:nth-child(n+3)
+      margin-top: 10px
+      height: 100%
+    &__stars
+      padding-bottom: 0
+    &__title
+      font-size: 16px
+      margin-bottom: 5px
+    &__subtitle
+      font-size: 10px
+      min-height: 165px
+      margin-bottom: 30px
+      line-height: 19px 
+
+      
