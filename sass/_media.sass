@@ -279,15 +279,37 @@
     &:nth-child(n+3)
       margin-top: 10px
       height: 100%
+    &__description
+      &__main
+        padding-right: 14px
+        padding-bottom: 15px
     &__stars
       padding-bottom: 0
     &__title
       font-size: 16px
       margin-bottom: 5px
     &__subtitle
-      font-size: 10px
+      font-size: 14px
       min-height: 165px
-      margin-bottom: 30px
-      line-height: 19px 
+      margin-bottom: 15px
+      line-height: 12px 
+    &__info
+      margin-bottom: 15px
+      &__main
+        margin-bottom: 20px
+    &__old-price
+      &__main
+        font-size: 8px
+    &__new-price
+      font-size: 14px
+    &__button
+      padding: 1px
 
-      
+@media (max-width: 380px) 
+  .proposition
+    &__subtitle
+      &__subtitle
+      font-size: 12px
+      min-height: 165px
+      margin-bottom: 15px
+      line-height: 10px 

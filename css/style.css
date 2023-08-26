@@ -1566,6 +1566,10 @@ template {
     margin-top: 10px;
     height: 100%;
   }
+  .proposition__description__main {
+    padding-right: 14px;
+    padding-bottom: 15px;
+  }
   .proposition__stars {
     padding-bottom: 0;
   }
@@ -1574,9 +1578,32 @@ template {
     margin-bottom: 5px;
   }
   .proposition__subtitle {
-    font-size: 10px;
+    font-size: 14px;
     min-height: 165px;
-    margin-bottom: 30px;
-    line-height: 19px;
+    margin-bottom: 15px;
+    line-height: 12px;
+  }
+  .proposition__info {
+    margin-bottom: 15px;
+  }
+  .proposition__info__main {
+    margin-bottom: 20px;
+  }
+  .proposition__old-price__main {
+    font-size: 8px;
+  }
+  .proposition__new-price {
+    font-size: 14px;
+  }
+  .proposition__button {
+    padding: 1px;
+  }
+}
+@media (max-width: 380px) {
+  .proposition__subtitle {
+    font-size: 12px;
+    min-height: 165px;
+    margin-bottom: 15px;
+    line-height: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
