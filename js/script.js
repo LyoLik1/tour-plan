@@ -42,40 +42,8 @@ $('.parallax-window').parallax({
   position: '-400px -400px',
 });
 
-// const slides = document.querySelectorAll('.reviews-slider__item');
-// const btnLeft = document.querySelector('.reviews-slider__button--prev');
-// const btnRight = document.querySelector('.reviews-slider__button--next');
-
-// console.log(slides);
-// currentSlide = 0;
-// const slidesNumber = slides.length - 1;
-
-// const moveToSlide = function (slide) {
-//   slides.forEach(
-//     (s, index) => (s.style.transform = `translateX(${(index - slide) * 100}%)`)
-//     //1 - -100%, 2 - 0%, 3 - 100%, 4 - 200%
-//   );
-// };
-
-// moveToSlide(0);
-
-// const nextSlide = function () {
-//   currentSlide == slidesNumber ? (currentSlide = 0) : currentSlide++;
-
-//   moveToSlide(currentSlide);
-//   // activateCurrentDot(currentSlide);
-// };
-// btnRight.addEventListener('click', function (e) {
-//   nextSlide();
-// });
-
-// const previousSlide = function () {
-//   currentSlide === 0 ? (currentSlide = slidesNumber) : currentSlide--;
-
-//   moveToSlide(currentSlide);
-//   // activateCurrentDot(currentSlide);
-// };
-
-// btnLeft.addEventListener('click', function (e) {
-//   previousSlide();
-// });
+const menuButton = document.querySelector('.menu-button');
+const navbarBottom = document.querySelector('.navbar-bottom');
+menuButton.addEventListener('click', function (e) {
+  navbarBottom.classList.toggle('navbar-bottom--active');
+});
