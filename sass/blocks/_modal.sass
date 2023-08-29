@@ -1,0 +1,52 @@
+.modal
+  &__overlay
+    position: fixed
+    left: 0
+    top: 0
+    bottom: 0
+    right: 0
+    background-color: rgba(0, 143, 223, 0.39)
+    z-index: 10
+    &--disable 
+      display: none
+  &__dialog
+    position: fixed
+    top: 50%
+    left: 50%
+    max-width: 478px 
+    padding: 33px 88px
+    color: $light
+    background-color: $dark
+    transform: translate(-50%, -50%)
+    border-radius: 8px
+    z-index: 11
+    &--disable
+      display: none
+  &__close
+    position: absolute
+    right: 18px
+    top: 17px
+    text-decoration: none
+    cursor: pointer
+  &__title
+    font-size: 18px
+    font-style: normal
+    font-weight: 700
+    line-height: normal
+    margin-bottom: 15px
+    text-transform: uppercase
+    text-align: center
+  &__input
+    width: 100%
+    margin-bottom: 15px
+  &__message
+    width: 100%
+    min-height: 123px
+    margin-bottom: 15px
+  &__info
+    color:  #E0E0E0
+    font-size: 12px
+    font-style: normal
+    font-weight: 700
+    line-height: normal
+    margin-left: 35px
