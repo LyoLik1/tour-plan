@@ -130,3 +130,4 @@ phoneInput.forEach((input) => {
     }
   });
 });
+AOS.init();
